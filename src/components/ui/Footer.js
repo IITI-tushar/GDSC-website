@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-// import '../css/Footer.css'
 const Footer = () => {
   return (
     <div className="px-4 pt-16 mx-auto sm:max-w-full md:max-w-full lg:max-w-full md:px-8 lg:px-8 backdrop-blur-lg bg-white/20 text-black">

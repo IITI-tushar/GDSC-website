@@ -1,0 +1,189 @@
+/* Event Page Styles */
+.event-page {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* Light blue background for a soft space theme */
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark text for contrast */
+  }
+  
+  /* Space Images */
+  .space-image {
+    position: absolute;
+    animation: moveAcrossScreen 15s linear infinite; /* Continuous movement */
+    opacity: 0.8;
+  }
+  
+  .star {
+    width: 30px;
+    top: 10%;
+    left: -50px; /* Start off-screen */
+    animation-duration: 12s;
+  }
+  
+  .planet {
+    width: 80px;
+    top: 40%;
+    left: -100px; /* Start off-screen */
+    animation-duration: 18s;
+  }
+  
+  .comet {
+    width: 50px;
+    top: 70%;
+    left: -80px; /* Start off-screen */
+    animation-duration: 10s;
+  }
+  
+  .asteroid {
+    width: 60px;
+    top: 20%;
+    left: -120px; /* Start off-screen */
+    animation-duration: 20s;
+  }
+  
+  .shooting-star {
+    width: 40px;
+    top: 50%;
+    left: -60px; /* Start off-screen */
+    animation-duration: 8s;
+  }
+  
+  /* Animation for Continuous Movement */
+  @keyframes moveAcrossScreen {
+    0% {
+      transform: translateX(0); /* Start from the left */
+    }
+    100% {
+      transform: translateX(110vw); /* Move across the entire viewport */
+    }
+  }
+  
+  /* Heading Styles */
+  /* Astronaut Animation */
+.astronaut {
+  position: fixed;
+  top: 0;
+  left: -150px; /* Start off the screen */
+  width: 150px; /* Adjust size as needed */
+  transform: rotate(180deg); /* Upside down */
+  animation: walkAcross 20s linear infinite; /* Adjusted speed for slow movement */
+  z-index: 10; /* Ensure it's above the content */
+}
+
+/* Keyframes for Horizontal Walking Animation */
+@keyframes walkAcross {
+  0% {
+    left: -150px; /* Start off the screen */
+  }
+  100% {
+    left: 100vw; /* Move across the screen */
+  }
+}
+
+/* Page Heading */
+.event-heading {
+  font-size: 48px;
+  color: black; /* Vibrant blue for contrast */
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+  
+  /* Event List Container */
+  /* Event List Container */
+  .event-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
+    gap: 20px; /* Space between the event blocks */
+    width: 100%;
+    max-width: 1200px; /* Optional: Set max width for the grid container */
+    margin: 0 auto; /* Center the grid container */
+    padding: 20px; /* Optional padding for spacing */
+  }
+  
+  /* Individual Event Block */
+  .event-block {
+    background: rgba(255, 255, 255, 0.9); /* White block with slight transparency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease-in-out;
+    position: relative; /* For pseudo-element positioning */
+    overflow: hidden; /* Ensure animations don't overflow the block */
+  }
+  
+  /* Hover Effect */
+  .event-block:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  /* Animated Background */
+  .event-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: linear-gradient(135deg, rgba(144, 238, 144, 0.5), rgba(144, 238, 144, 0.9));
+    z-index: -1; /* Ensure it stays behind the content */
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    border-radius: 10px; /* Match the block's border-radius */
+  }
+  
+  /* Hover Background Animation */
+  .event-block:hover::before {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  /* Event Title */
+  .event-title {
+    font-size: 24px;
+    color: #333; /* Dark text for readability */
+    margin-bottom: 10px;
+  }
+  
+  /* Event Description */
+  .event-description {
+    font-size: 16px;
+    color: #555; /* Slightly lighter text for descriptions */
+    margin-bottom: 15px;
+  }
+  
+  /* Event Details */
+  .event-details {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* Register Button */
+  .register-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(90deg, #4285F4, #34A853, #FBBC04, #EA4335); /* GDSC gradient */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    background-size: 200% 200%; /* To create a smooth hover transition */
+  }
+  
+  .register-btn:hover {
+    background-position: right center; /* Shift the gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+  }
+  
+  

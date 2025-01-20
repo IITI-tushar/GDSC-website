@@ -1,9 +1,10 @@
 "use client";
 import { useScroll, useTransform } from "framer-motion";
 import React from "react";
-import { GoogleGeminiEffect } from "@/components/ui/GoogleGeminiEffect";
+import { HeroEffect } from "@/components/ui/HeroEffect";
+import Sun from "./Sun";
 
-export function GoogleGeminiEffectDemo() {
+export function HeroEffectDemo() {
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -17,11 +18,13 @@ export function GoogleGeminiEffectDemo() {
   const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
 
   return (
+    
     <div
-      className="h-[400vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative pt-20 overflow-clip"
+      className="h-[200vh] lg:h-[400vh] md:h-[300vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative pt-20 overflow-clip"
       ref={ref || null}
     >
-      <GoogleGeminiEffect
+      
+      <HeroEffect
         pathLengths={[
           pathLengthFirst,
           pathLengthSecond,
@@ -30,10 +33,10 @@ export function GoogleGeminiEffectDemo() {
           pathLengthFifth,
         ]}
         title="Google Developers Student Club"
-        description="About or Description for GDSC
-        . Nulla debitis eaque quam aliquam unde placeat nobis optio nam tempore, ipsam distinctio totam architecto vitae odit magnam ipsa id minima at Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos nobis velonsectetur odio quam hic recusandae tempore id perferendis?"
-      />
-
+        description="About or Description
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolor vel reprehenderit molestias sint a voluptas laborum earum animi voluptatem. Temporibus veniam deserunt eligendi dolore harum iste doloremque voluptas quisquam!"
+          />
     </div>
+    
   );
 }

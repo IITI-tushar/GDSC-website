@@ -50,7 +50,7 @@ export function SparklesPreview2({
     children?: ReactNode;
   }) {
     return (
-      <div className="h-[40rem] relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+      <div className="h-[40rem] relative w-full bg-black -z-10 flex flex-col items-center justify-center overflow-hidden rounded-md">
         <div className="w-full absolute inset-0 h-screen">
           <SparklesCore
             id="tsparticlesfullpage"
