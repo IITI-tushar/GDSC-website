@@ -1,18 +1,25 @@
-import type { Config } from "tailwindcss";
-
-export default {
+module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        green: "#00FF00",
+        blue: "#00BFFF",
+        red: "#FF6347",
+        yellow: "#FFFF00",
+      },
+      keyframes: {
+        moveRocket: {
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(-10%)" },
+        },
+      },
+      animation: {
+        moveRocket: "moveRocket 5s infinite",
       },
     },
   },
   plugins: [],
-} satisfies Config;
+}
