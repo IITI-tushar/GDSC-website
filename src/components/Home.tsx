@@ -6,6 +6,8 @@ import { TechCircle } from './ui/TechCircle'
 import { CodeBlock } from './ui/CodeBlock'
 import { SpaceObjects } from './ui/SpaceObjects'
 import { Typewriter2 } from './ui/typewriter2'
+import Navbar from './ui/Navbar'
+import Footer from './ui/Footer'
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -28,8 +30,9 @@ export default function Home() {
 
   return (
     <div className="bg-gradient-to-b from-blue-50 to-indigo-100 text-gray-800 overflow-hidden">
-      <SpaceObjects />
-      <main className="min-h-screen relative">
+      <Navbar />
+      <SpaceObjects />  
+      <main className="min-h-screen relative py-10">
         <div className="container mx-auto px-4 py-16 relative z-10">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
@@ -146,6 +149,8 @@ export default function Home() {
           <Typewriter2 text="We are a community of students passionate about technology and innovation. Our mission is to bridge the gap between theory and practice, fostering a culture of continuous learning and collaboration." />
         </div>
       </motion.div>
+      <Footer />
+
     </div>
   )
 }
