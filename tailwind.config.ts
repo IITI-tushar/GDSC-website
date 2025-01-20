@@ -9,6 +9,8 @@ module.exports = {
         blue: "#00BFFF",
         red: "#FF6347",
         yellow: "#FFFF00",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
       },
       keyframes: {
         moveRocket: {

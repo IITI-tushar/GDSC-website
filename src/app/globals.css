@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   @apply bg-blue-50 text-gray-800;
-}
+} */
 
 /* Add a subtle glow effect to text */
 h1,
