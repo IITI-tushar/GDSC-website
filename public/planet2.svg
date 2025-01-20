@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 728.128 658.257">
+  <style>
+    #Path_3 {
+      stroke-dasharray: 1040;
+      stroke-dashoffset: 1040;
+      animation: planet-line 7s cubic-bezier(.54, 0, .54, 1) .8s infinite;
+    }
+
+    @keyframes planet-line {
+      0% {
+        stroke-dashoffset: 1040;
+      }
+      50% {
+        stroke-dashoffset: -1600;
+      }
+      100% {
+        stroke-dashoffset: 1040;
+      }
+    }
+  </style>
+
+  <g id="Group_6" data-name="Group 6" transform="translate(-1260.832 -169.763)">
+    <g id="Group_5" data-name="Group 5" transform="translate(24 -2)">
+      <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(1453.872 171.763) rotate(21)" fill="#d130a1" stroke="#404040" stroke-width="10">
+        <circle cx="249.5" cy="249.5" r="249.5" stroke="none" />
+        <circle cx="249.5" cy="249.5" r="244.5" fill="none" />
+      </g>
+      <path id="Path_3" data-name="Path 3" d="M83.691,191.663s-248.042,131.728,51.848,60.66S895.6-100.255,538.6,20.26" transform="matrix(0.799, 0.602, -0.602, 0.799, 1418.451, 202.404)" fill="none" stroke="#404040" stroke-width="10" />
+      <path id="Path_5" data-name="Path 5" d="M404.605,156.159c51.081-23.026,99.037-47.03,139.74-69.411" transform="matrix(0.799, 0.602, -0.602, 0.799, 1449.451, 248.404)" fill="none" stroke="#404040" stroke-linecap="round" stroke-width="10" stroke-dasharray="60" />
+    </g>
+    <path id="Path_4" data-name="Path 4" d="M38.112,271.355c22.86-2.854,54.541-8.87,97.427-19.033,32.088-7.6,66.012-17.618,100.1-29.13" transform="matrix(0.799, 0.602, -0.602, 0.799, 1423.451, 239.404)" fill="none" stroke="#404040" stroke-linecap="round" stroke-width="10" stroke-dasharray="60 30" />
+  </g>
+</svg>
