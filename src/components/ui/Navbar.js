@@ -24,30 +24,30 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`navbar ${!menuOpen ? "bg-white/60  w-[98%] mx-[1%] top-1 " : "bg-white/100 border-0 top-0 left-0"} border-black border-2 shadow-md p-4 fixed  w-full z-50 rounded-lg `}>
+        <nav className={`navbar ${!menuOpen ? "bg-white/60  w-[97%] mx-[1.5%] top-1 " : "bg-white/100 border-0 top-0 left-0"} border-black border-2 shadow-md p-4 fixed  w-full z-50 rounded-lg `}>
             <div className="container mx-auto flex justify-between items-center">
-      
+                
                 <div className="text-3xl font-bold">
                     GDSC IIT Indore
                 </div>
 
                 <ul className="hidden md:flex flex-row space-x-6">
                     <li className="text-2xl font-semibold font-sans group relative">
-                        <Link href="/home" className="relative text-gray-800 group-hover:text-[rgba(34,197,94,255)] transition-colors duration-700">
+                        <Link href="/" className="relative text-gray-800 group-hover:text-[rgba(34,197,94,255)] transition-colors duration-700">
                             Home
                             <span className="absolute left-0 top-0 w-0 h-[2px] bg-[rgba(34,197,94,255)] group-hover:w-full transition-all duration-700 opacity-0 group-hover:opacity-100"></span>
                             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[rgba(34,197,94,255)] group-hover:w-full transition-all duration-700 opacity-0 group-hover:opacity-100"></span>
                         </Link>
                     </li>
                     <li className="text-2xl font-semibold font-sans group relative">
-                        <Link href="/about" className="relative text-gray-800 group-hover:text-red transition-colors duration-700">
+                        <Link href="/#about" className="relative text-gray-800 group-hover:text-red transition-colors duration-700">
                             About
                             <span className="absolute left-0 top-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-700 opacity-0 group-hover:opacity-100"></span>
                             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-700 opacity-0 group-hover:opacity-100"></span>
                         </Link>
                     </li>
                     <li className="text-2xl font-semibold font-sans group relative">
-                        <Link href="/service" className="relative text-gray-800 group-hover:text-yellow transition-colors duration-700">
+                        <Link href="/team" className="relative text-gray-800 group-hover:text-yellow transition-colors duration-700">
                             Team
                             <span className="absolute left-0 top-0 w-0 h-[2px] bg-yellow group-hover:w-full transition-all duration-700 opacity-0 group-hover:opacity-100"></span>
                             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow group-hover:w-full transition-all duration-700 opacity-0 group-hover:opacity-100"></span>
@@ -76,21 +76,21 @@ const Navbar = () => {
             <div className={`md:hidden ${menuOpen ? 'block' : 'hidden'} bg-white shadow-md p-4 absolute top-16 left-0 w-full transition-transform duration-700`}>
                 <ul className="flex flex-col space-y-6">
                     <li className="navbar-comp text-2xl font-semibold font-sans group relative">
-                        <Link href="/home" className="relative text-gray-800 group-hover:text-[rgba(34,197,94,255)]  transition-colors duration-700">
+                        <Link href="/" className="relative text-gray-800 group-hover:text-[rgba(34,197,94,255)]  transition-colors duration-700">
                             Home
                             <span className="absolute left-0 top-0 w-0 h-[2px] bg-[rgba(34,197,94,255)]  group-hover:w-full transition-all duration-700 opacity-0 group-hover:opacity-100"></span>
                             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[rgba(34,197,94,255)]  group-hover:w-full transition-all duration-700 opacity-0 group-hover:opacity-100"></span>
                         </Link>
                     </li>
                     <li className="navbar-comp text-2xl font-semibold font-sans group relative">
-                        <Link href="/about" className="relative text-gray-800 group-hover:text-red transition-colors duration-700">
+                        <Link href="/#about" className="relative text-gray-800 group-hover:text-red transition-colors duration-700">
                             About
                             <span className="absolute left-0 top-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-700 opacity-0 group-hover:opacity-100"></span>
                             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-700 opacity-0 group-hover:opacity-100"></span>
                         </Link>
                     </li>
                     <li className="navbar-comp text-2xl font-semibold font-sans group relative">
-                        <Link href="/service" className="relative text-gray-800 group-hover:text-yellow transition-colors duration-700">
+                        <Link href="/team" className="relative text-gray-800 group-hover:text-yellow transition-colors duration-700">
                             Team
                             <span className="absolute left-0 top-0 w-0 h-[2px] bg-yellow group-hover:w-full transition-all duration-700 opacity-0 group-hover:opacity-100"></span>
                             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow group-hover:w-full transition-all duration-700 opacity-0 group-hover:opacity-100"></span>

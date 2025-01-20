@@ -14,7 +14,7 @@ const StarryBackground = () => {
       star.classList.add('star', color);
 
       // Random size for the star (keeping it small for visible effect)
-      const starSize = Math.random() * 4 + 6; // Random size between 6px and 10px
+      const starSize = Math.random() * 3 + 5; // Random size between 6px and 10px
       star.style.width = `${starSize}px`;
       star.style.height = `${starSize}px`;
 

@@ -131,3 +131,22 @@
   transition: all 0.3s ease 0s;
 }
 
+.bg-footer {
+  background-color: white;
+}
+
+.text-white {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e63946; 
+}
+
+.social{
+  margin-right: 100px !important;
+} 
