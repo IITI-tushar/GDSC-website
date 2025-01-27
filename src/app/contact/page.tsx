@@ -21,6 +21,7 @@ const ContactPage = () => {
       <div className="contact-left">
         <img
           src="https://gdscmmmutwog.web.app/images/gif3" 
+          />
       <Navbar />
       {/* Left Side: Full screen height image (1/3 width) */}
       <div className="contact-left">
@@ -60,6 +61,7 @@ const ContactPage = () => {
           <button type="submit" className="form-button">Send</button>
         </form>
       </div>
+    </div>
     </div>
   );
 };

@@ -18,7 +18,7 @@ export function SpaceObjects() {
 
   useEffect(() => {
     // Increase the number of space objects
-    const newObjects = Array.from({ length: 50 }, () => ({
+    const newObjects = Array.from({ length: 25 }, () => ({
       x: Math.random() * 100, // Random starting position
       y: Math.random() * 100,
       rotation: Math.random() * 360, // Random initial rotation
