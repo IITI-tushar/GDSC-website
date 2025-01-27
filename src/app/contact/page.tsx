@@ -7,6 +7,7 @@ import './contact.css';
 const ContactPage = () => {
   return (
     <div className="contact-page">
+            <Navbar />
       <div className="a-one animate"></div>
       <div className="a-two animate"></div>
       <div className="a-three animate"></div>
@@ -18,11 +19,7 @@ const ContactPage = () => {
       <div className="a-nine animate"></div>
       <div className="a-ten animate"></div>
       {/* Left Side: Full screen height image (1/3 width) */}
-      <div className="contact-left">
-        <img
-          src="https://gdscmmmutwog.web.app/images/gif3" 
-          />
-      <Navbar />
+
       {/* Left Side: Full screen height image (1/3 width) */}
       <div className="contact-left">
         <img
@@ -31,21 +28,17 @@ const ContactPage = () => {
           className="contact-image"
         />
         <div className="social-links">
-    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" className="social-icon" />
-    </a>
-    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="social-icon" />
-    </a>
-  </div>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" className="social-icon" />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="social-icon" />
+        </a>
+        </div>
       </div>
-     
-  
 
       {/* Right Side: Contact Form */}
       <div className="contact-right">
-
-   
 
         <h1>Contact Us</h1>
         <form>
@@ -62,7 +55,7 @@ const ContactPage = () => {
         </form>
       </div>
     </div>
-    </div>
+    
   );
 };
 
