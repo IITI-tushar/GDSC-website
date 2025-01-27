@@ -2,32 +2,239 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Global body styles */
+/* body {
+  @apply bg-blue-50 text-gray-800;
+} */
+
+/* Subtle glow effect for headings */
+h1,
+h2 {
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Futuristic underline effect for links */
+a:not(.bg-indigo-600) {
+  position: relative;
+  text-decoration: none;
+}
+
+a:not(.bg-indigo-600)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+a:not(.bg-indigo-600):hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Subtle pulse animation for CTA button */
+.bg-indigo-600 {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  height: 100%; /* Ensure body takes full height */
-  overflow-y: auto; /* Enable scrolling */
+/* Modern scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-#root {
-  height: 100%; /* Full height for root element */
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
 }
 
-* {
-  box-sizing: border-box;
+::-webkit-scrollbar-thumb {
+  background: #3730a3;
+  border-radius: 4px;
 }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #312e81;
+}
+
+/* Twinkle animation for stars */
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.star {
+  position: fixed;
+  animation: twinkle 2s infinite alternate;
+  pointer-events: none;
+  transition: top 10s linear;
+}
+
+.star.red {
+  background-color: red;
+}
+
+.star.blue {
+  background-color: blue;
+}
+
+.star.green {
+  background-color: green;
+}
+
+.star.yellow {
+  background-color: yellow;
+}
+
+/* Team header gradient animation */
+.team-head::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(270deg, green, yellow, red, blue);
+  background-size: 200% 100%;
+  animation: borderAnimation 10s ease-in-out infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Navbar transition animation */
+.navbar-comp {
+  animation: trans 0.5s ease-in-out forwards;
+}
+
+@keyframes trans {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Timeline styles */
+#timeline-1 {
+  position: relative;
+  background-color: #111; /* Optional: background color */
+}
+
+#timeline-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  filter: blur(var(--bg-blur));
+  z-index: -1;
+}
+
+.timeline-item {
+  opacity: 0.3;
+  filter: blur(2px);
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline-item--active {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  filter: blur(0px) !important;
+}
+
+.timeline-item--active::before {
+  top: 50%;
+  opacity: 1;
+  transition: all 0.3s ease 0.2s;
+}
+
+.timeline-item::before {
+  content: attr(data-text);
+  letter-spacing: 3px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  top: 70%;
+  margin-top: -5px;
+  padding-left: 15px;
+  opacity: 0;
+  right: calc(-100% - 56px);
+  transition: all 0.3s ease 0s;
+}
+
+.domain-card {
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.domain-card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.domain-card .icon {
+  transition: all 0.3s ease;
+}
+
+.domain-card:hover .icon {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.bg-footer {
+  background-color: white;
+}
+
+.text-white {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e63946; 
+}
+
+.social{
+  margin-right: 100px !important;
+} 

@@ -1,5 +1,7 @@
 // src/app/contact/page.tsx
 'use client'; // This directive marks the component as a Client Component
+
+import Navbar from '@/components/ui/Navbar';
 import './contact.css';
 
 const ContactPage = () => {
@@ -19,6 +21,11 @@ const ContactPage = () => {
       <div className="contact-left">
         <img
           src="https://gdscmmmutwog.web.app/images/gif3" 
+      <Navbar />
+      {/* Left Side: Full screen height image (1/3 width) */}
+      <div className="contact-left">
+        <img
+          src="https://gdscmmmutwog.web.app/images/gif3" // Replace with your image URL
           alt="Contact Background"
           className="contact-image"
         />
@@ -38,6 +45,7 @@ const ContactPage = () => {
       <div className="contact-right">
 
    
+
         <h1>Contact Us</h1>
         <form>
           <input

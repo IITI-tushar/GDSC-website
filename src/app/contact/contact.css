@@ -41,6 +41,24 @@ body {
   transform: scale(0.8); 
   opacity: 0; 
   animation: popUp 0.8s ease-out forwards; 
+
+    height: 50%; /* Make image full height */
+    object-fit: cover; /* Ensure image covers the entire div */
+    
+  }
+  
+  .contact-right {
+  width: 40%; /* Remaining width (2/3 of the screen) */
+  height: 80%;
+  padding-top: 100px;
+  padding: 20px;
+  background-color: #e0f0a4; /* White background for right section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  border-radius: 8px;
+  text-align: center;
+  transform: scale(0.8); /* Initial scale for animation */
+  opacity: 0; /* Start invisible */
+  animation: popUp 0.8s ease-out forwards; /* Animation with a forward state */
   margin-left: 20%;
   
 }
@@ -355,3 +373,4 @@ body {
     }
   }
   
+  }
