@@ -30,17 +30,17 @@ body {
   }
   
   .contact-right {
-  width: 40%; /* Remaining width (2/3 of the screen) */
+  width: 40%; 
   height: 80%;
   padding-top: 50px;
   padding: 20px;
-  background-color: #e0f0a4; /* White background for right section */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  background-color: #68a0a0; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   border-radius: 8px;
   text-align: center;
-  transform: scale(0.8); /* Initial scale for animation */
-  opacity: 0; /* Start invisible */
-  animation: popUp 0.8s ease-out forwards; /* Animation with a forward state */
+  transform: scale(0.8); 
+  opacity: 0; 
+  animation: popUp 0.8s ease-out forwards; 
   margin-left: 20%;
   
 }
@@ -147,10 +147,10 @@ body {
     position: absolute;
     bottom: 0;
     left: 150px;
-    animation: MoveUpDown 15s linear infinite;
-  }
-  
-  .a-two {
+    animation: MoveUpDown 75s linear infinite;
+}
+
+.a-two {
     width: 150px;
     height: 150px;
     background-color: rgb(125, 238, 125);
@@ -159,10 +159,10 @@ body {
     position: absolute;
     bottom: 10px;
     left: 200px;
-    animation: MoveUpDownTwo 9s linear infinite;
-  }
-  
-  .a-three {
+    animation: MoveUpDownTwo 27s linear infinite;
+}
+
+.a-three {
     width: 120px;
     height: 120px;
     background-color: rgb(151, 151, 238);
@@ -171,10 +171,10 @@ body {
     position: absolute;
     bottom: 120px;
     left: 300px;
-    animation: MoveUpDownThree 11s linear infinite;
-  }
-  
-  .a-four {
+    animation: MoveUpDownThree 60s linear infinite;
+}
+
+.a-four {
     width: 80px;
     height: 80px;
     background-color: rgb(254, 254, 141);
@@ -183,22 +183,22 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    animation: MoveUpDownFour 30s linear infinite;
-  }
-  
-  .a-five {
+    animation: MoveUpDownFour 108s linear infinite;
+}
+
+.a-five {
     width: 50px;
     height: 50px;
-    background-color: green;
+    background-color: rgb(170, 235, 170);
     opacity: 0.9;
     border-radius: 50%;
     position: absolute;
     bottom: 200px;
     right: 0;
-    animation: MoveUpDownFive 17s linear infinite;
-  }
-  
-  .a-six {
+    animation: MoveUpDownFive 75s linear infinite;
+}
+
+.a-six {
     width: 175px;
     height: 175px;
     background-color: red;
@@ -207,35 +207,35 @@ body {
     position: absolute;
     bottom: 250px;
     right: 200px;
-    animation: MoveUpDownSix 15s linear infinite;
-  }
-  
-  .a-seven {
+    animation: MoveUpDownSix 69s linear infinite;
+}
+
+.a-seven {
     width: 250px;
     height: 250px;
-    background-color: rgb(71, 71, 211);
+    background-color: rgb(231, 218, 69);
     opacity: 0.3;
     border-radius: 50%;
     position: absolute;
     bottom: 0;
     left: 450px;
     right: 0;
-    animation: MoveUpDownSeven 19s linear infinite;
-  }
-  
-  .a-eight {
+    animation: MoveUpDownSeven 75s linear infinite;
+}
+
+.a-eight {
     width: 75px;
     height: 75px;
-    background-color: blue;
+    background-color: rgb(240, 240, 59);
     opacity: 0.4;
     border-radius: 50%;
     position: absolute;
     bottom: 0;
     left: 350px;
-    animation: MoveUpDownEight 9s linear infinite;
-  }
-  
-  .a-nine {
+    animation: MoveUpDownEight 105s linear infinite;
+}
+
+.a-nine {
     width: 45px;
     height: 45px;
     background-color: rgb(221, 221, 99);
@@ -244,20 +244,21 @@ body {
     position: absolute;
     bottom: 0;
     left: 450px;
-    animation: MoveUpDownNine 24s linear infinite;
-  }
-  
-  .a-ten {
+    animation: MoveUpDownNine 90s linear infinite;
+}
+
+.a-ten {
     width: 150px;
     height: 150px;
-    background-color: rgb(109, 162, 109);
+    background-color: rgb(171, 222, 171);
     opacity: 0.6;
     border-radius: 50%;
     position: absolute;
     bottom: 0;
     right: 0;
-    animation: MoveUpDownTen 20s linear infinite;
-  }
+    animation: MoveUpDownTen 87s linear infinite;
+}
+
   
   @keyframes a-one {
     from { top: 0; left: 0; }
