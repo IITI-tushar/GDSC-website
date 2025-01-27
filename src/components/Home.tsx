@@ -6,12 +6,14 @@ import { TechCircle } from './ui/TechCircle'
 import { CodeBlock } from './ui/CodeBlock'
 import { SpaceObjects } from './ui/SpaceObjects'
 import { Typewriter2 } from './ui/typewriter2'
+import { Domains } from "./Domains"
 import Navbar from './ui/Navbar'
 import Footer from './ui/Footer'
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const aboutRef = useRef<HTMLDivElement>(null)
+  const domainsRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: aboutRef,
     offset: ["start end", "end start"]
@@ -148,6 +150,13 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-indigo-800">About Us</h2>
           <Typewriter2 text="We are a community of students passionate about technology and innovation. Our mission is to bridge the gap between theory and practice, fostering a culture of continuous learning and collaboration." />
         </div>
+      </motion.div>
+      <motion.div
+        ref={domainsRef}
+        className="min-h-screen flex items-center justify-center relative z-10 bg-blue-200"
+        id="domains"
+      >
+        <Domains />
       </motion.div>
       <Footer />
 

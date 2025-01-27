@@ -201,3 +201,20 @@ a:not(.bg-indigo-600):hover::after {
   right: calc(-100% - 56px);
   transition: all 0.3s ease 0s;
 }
+
+.domain-card {
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.domain-card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.domain-card .icon {
+  transition: all 0.3s ease;
+}
+
+.domain-card:hover .icon {
+  transform: rotate(15deg) scale(1.1);
+}
