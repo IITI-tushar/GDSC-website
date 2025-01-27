@@ -24,9 +24,9 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`navbar ${!menuOpen ? "bg-white/60  w-[98%] mx-[1%] top-1 " : "bg-white/100 border-0 top-0 left-0"} border-black border-2 shadow-md p-4 fixed  w-full z-50 rounded-lg `}>
+        <nav className={`navbar ${!menuOpen ? "bg-white/60  w-[97%] mx-[1.5%] top-1 " : "bg-white/100 border-0 top-0 left-0"} border-black border-2 shadow-md p-4 fixed  w-full z-50 rounded-lg `}>
             <div className="container mx-auto flex justify-between items-center">
-      
+                
                 <div className="text-3xl font-bold">
                     GDSC IIT Indore
                 </div>
